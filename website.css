@@ -1,3 +1,13 @@
+body{
+	background color: white;
+	font-family: Lato;
+}
+
+html{
+	height: 100%
+}
+
+
 #content{
 	text-align: center;
 	padding-top: 10%;
@@ -8,25 +18,18 @@
 
 #email{
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 24px;
 	color: #012233;
 }
-
-body{
-	background color: white;
-	font-family: Lato;
+.accordion{
+    text-align: center;
 }
-
 .color{
 	color: #292f50;
 }
 
-html{
-	height: 100%
-}
 
 .name{
-
 	font-weight: 700;
 	font-size: 4em;
 	color: #292f50;
@@ -36,4 +39,8 @@ html{
 	font-weight: 700;
 	font-size: 25px;
 	color: #0084d5;
+}
+.icons{
+    width:40px;
+    
 }
