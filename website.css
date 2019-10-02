@@ -1,0 +1,39 @@
+#content{
+	text-align: center;
+	padding-top: 10%;
+	text-shadow: 0px 4px 3px             rgba(0,0,0,0.4)
+				 0px 8px 13px            rgba(0,0,0,0.1)
+				 0px 18px 23px			 rgba(0,0,0,0.1)
+}
+
+#email{
+	font-weight: 700;
+	font-size: 20px;
+	color: #012233;
+}
+
+body{
+	background color: white;
+	font-family: Lato;
+}
+
+.color{
+	color: #292f50;
+}
+
+html{
+	height: 100%
+}
+
+.name{
+
+	font-weight: 700;
+	font-size: 4em;
+	color: #292f50;
+}
+
+.link{
+	font-weight: 700;
+	font-size: 25px;
+	color: #0084d5;
+}
