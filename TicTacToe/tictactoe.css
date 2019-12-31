@@ -1,8 +1,8 @@
-table{
+#tictactoe table{
     margin-left: auto;
     margin-right: auto;
 }
-td{
+#tictactoe td{
     border: 2px solid grey;
     width: 75px;
     height: 75px;
@@ -10,52 +10,52 @@ td{
     color:#137091;
     text-align: center;
 }
-#button{
+#tictactoe #button{
     text-align: center;
 }
-#winner{
+#tictactoe #winner{
     text-align: center;
     font-size: x-large;
     color: #137091
 }
-#index02{
+#tictactoe #index02{
     border-top: none;
     border-right: none;
 }
-#index12{
+#tictactoe #index12{
     border-top: none;
     border-right: none;
 }
-#index22{
+#tictactoe #index22{
     border-top: none;
     border-right: none;
     border-bottom: none;
 }
-#index00{
+#tictactoe #index00{
     border-top: none;
     border-left: none;
     border-right: none;
 }
-#index10{
+#tictactoe #index10{
     border-top: none;
     border-left: none;
     border-right: none;
 }
-#index20{
+#tictactoe #index20{
     border-top: none;
     border-left: none;
     border-bottom: none;
     border-right: none;
 }
-#index01{
+#tictactoe #index01{
     border-top: none;
     border-right: none;
 }
-#index11{
+#tictactoe #index11{
     border-top: none;
     border-right: none;
 }
-#index21{
+#tictactoe #index21{
     border-top: none;
     border-right: none;
     border-bottom: none;
