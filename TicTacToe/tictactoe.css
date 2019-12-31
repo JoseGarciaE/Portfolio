@@ -1,0 +1,65 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border: 2px solid grey;
+    width: 75px;
+    height: 75px;
+
+    color:#137091;
+    text-align: center;
+}
+#button{
+    text-align: center;
+}
+#winner{
+    text-align: center;
+    font-size: x-large;
+    color: #137091
+}
+#index02{
+    border-top: none;
+    border-right: none;
+}
+#index12{
+    border-top: none;
+    border-right: none;
+}
+#index22{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+#index00{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#index10{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#index20{
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+#index01{
+    border-top: none;
+    border-right: none;
+}
+#index11{
+    border-top: none;
+    border-right: none;
+}
+#index21{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+ 
+ 
+ 
