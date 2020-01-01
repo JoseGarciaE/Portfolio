@@ -1,18 +1,33 @@
-function addString(input){
-    document.getElementById("solution").innerHTML = input;
-}
-
 function doMath(input){
 
-    var trig = input[0] + input[1] + input[2];
+    const isTrig = input[0] + input[1] + input[2];
 
-    if(trig !== "sin" && trig!== "cos" && trig!== "tan"){
-        var left = "";
-        var right = "";
-        var solution = "";
+    let solution = "";
 
+    if(isTrig === "sin" || isTrig === "cos" || isTrig === "tan"){
+        let value = "";
+
+        for(i=4; i<input.length-1; i++)
+            value = value + input[i];
+
+        value = parseFloat(value);
+
+        if(isTrig==="sin")
+            value = Math.sin(value);
+        else if(isTrig==="cos")
+            value = Math.cos(value);
+        else
+            value = Math.tan(value);
+        
+        solution = value;
+    }
+  
+    else{
+
+        let left = "";
+        let right = "";
+       
         var count = -1;
-
 
         for(i=0; i<input.length; i++){
             left = left + input[i];
@@ -22,15 +37,12 @@ function doMath(input){
                 i = 100;
         }
 
-        for(i=count+1; i<input.length; i++){
+        for(i=count+1; i<input.length; i++)
             right = right + input[i];
-        }
-
 
         left = parseFloat(left);
         
         right = parseFloat(right);
-
 
         if(input[count] == "x")
             solution = left * right;
@@ -45,88 +57,43 @@ function doMath(input){
             solution = left - right;
 
     }
-  
-
-    else{
-       
-        var value = "";
-
-        for(i=4; i<input.length-1; i++){
-            value = value + input[i];
-        }
-
-        value = parseFloat(value);
-
-        if(trig==="sin")
-            value = Math.sin(value);
-        else if (trig==="cos")
-            value = Math.cos(value);
-        else
-            value = Math.tan(value);
-        
-        
-        solution = value;
-
-    }
 
     return solution; 
 
-
-
 }
 
+document.addEventListener("DOMContentLoaded", function() {
 
+    let input = "";
 
-$(document).ready(function(){
+    const basicMath = document.querySelectorAll(".basicMath");
 
-    var input = "";
+    for(const elem of basicMath){
+        elem.addEventListener("click", function() {
+            input += elem.textContent;
+            document.querySelector("#solution").textContent = input;
+        });
+    }
+    
+    const trig = document.querySelectorAll(".trig");
 
-    $("#0").click(function(){input = input + "0"; addString(input);});
-    $("#1").click(function(){input = input + "1"; addString(input);});
-    $("#2").click(function(){input = input + "2"; addString(input);});
-    $("#3").click(function(){input = input + "3"; addString(input);});
-    $("#4").click(function(){input = input + "4"; addString(input);});
-    $("#5").click(function(){input = input + "5"; addString(input);});
-    $("#6").click(function(){input = input + "6"; addString(input);});
-    $("#7").click(function(){input = input + "7"; addString(input);});
-    $("#8").click(function(){input = input + "8"; addString(input);});
-    $("#9").click(function(){input = input + "9"; addString(input);});
+    for(const elem of trig){
+        elem.addEventListener("click", function(){
+            if(document.querySelector("#solution").textContent != "Calculator"){
+                input = elem.textContent + "(" + input + ")";
+                document.querySelector("#solution").textContent = input;
+            }
+        });
+    }
 
-    $("#mult").click(function(){input = input + "x"; addString(input); });
-    $("#div").click(function(){input = input + "/"; addString(input); });
-    $("#plus").click(function(){input = input + "+"; addString(input); });
-    $("#minus").click(function(){input = input + "-"; addString(input);});
-
-    $("#period").click(function(){input = input + "."; addString(input);});
-
-  
-
-
-    $("#sin").click(function(){
-        input = "sin(" + input + ")";
-        document.getElementById("solution").innerHTML = input;
-    });
-    $("#cos").click(function(){
-        input = "cos(" + input + ")";
-        document.getElementById("solution").innerHTML = input;
-    });
-    $("#tan").click(function(){
-        input = "tan(" + input + ")";
-        document.getElementById("solution").innerHTML = input;
+    document.querySelector("#equals").addEventListener("click", function(){
+            document.querySelector("#solution").textContent = doMath(input);
+            input = doMath(input).toString()
     });
 
-
-    $("#equals").click(function(){
-        document.getElementById("solution").innerHTML = doMath(input);
-        input = doMath(input).toString()
+    document.querySelector("#clear").addEventListener("click", function(){
+            document.querySelector("#solution").textContent = "Calculator";
+            input = "";
     });
-
-    $("#clear").click(function(){ 
-        document.getElementById("solution").innerHTML = "Calculator";
-        input = "";
-    });
-
-
-
 
 });
