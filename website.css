@@ -2,21 +2,11 @@ body{
 	font-family: Lato;
 }
 
-#project div{
-	display: inline-block;
-	text-align: center;
+
+#project table{
+	width: 100%;
 }
 
-#calculator{
-	float: left;
-	padding-top: 5px;
-	padding-left: 250px;
-	
-}
-#tictactoe{
-	float: right;
-	padding-right: 250px;
-}
 #calculator table{
 	width: 200px;
 

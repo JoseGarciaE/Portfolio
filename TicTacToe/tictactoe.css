@@ -18,44 +18,44 @@
     font-size: x-large;
     color: #137091
 }
-#tictactoe #index02{
+#tictactoe #indexTic02{
     border-top: none;
     border-right: none;
 }
-#tictactoe #index12{
+#tictactoe #indexTic12{
     border-top: none;
     border-right: none;
 }
-#tictactoe #index22{
+#tictactoe #indexTic22{
     border-top: none;
     border-right: none;
     border-bottom: none;
 }
-#tictactoe #index00{
+#tictactoe #indexTic00{
     border-top: none;
     border-left: none;
     border-right: none;
 }
-#tictactoe #index10{
+#tictactoe #indexTic10{
     border-top: none;
     border-left: none;
     border-right: none;
 }
-#tictactoe #index20{
+#tictactoe #indexTic20{
     border-top: none;
     border-left: none;
     border-bottom: none;
     border-right: none;
 }
-#tictactoe #index01{
+#tictactoe #indexTic01{
     border-top: none;
     border-right: none;
 }
-#tictactoe #index11{
+#tictactoe #indexTic11{
     border-top: none;
     border-right: none;
 }
-#tictactoe #index21{
+#tictactoe #indexTic21{
     border-top: none;
     border-right: none;
     border-bottom: none;

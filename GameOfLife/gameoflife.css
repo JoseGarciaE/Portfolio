@@ -1,0 +1,22 @@
+#gameoflife{
+    text-align: center;
+}
+#gameoflife p{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+#gameoflife table{
+    margin-left: auto;
+    margin-right: auto;
+}
+#gameoflife td{
+    height: 12px;
+    width: 10px;
+}
+#gameoflife button{
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+

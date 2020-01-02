@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="website.css">
     <link rel="stylesheet" type="text/css" href="Calculator/calc.css">
     <link rel="stylesheet" type="text/css" href="TicTacToe/tictactoe.css">
+    <link rel="stylesheet" type="text/css" href="GameOfLife/gameoflife.css">
+
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 
@@ -50,83 +52,96 @@
     </div>
 
     <div id="project">
-      <!-- Calculator APP -->
-      <div id="calculator">
-        <table>
-          <tr>
-            <th colspan="5" id="solution">Calculator</th>
+      <table>
+        <tbody>
+          <tr>          
+            <td>
+              <!-- Calculator APP -->
+              <div id="calculator">
+              <table>
+                <tr>
+                  <th colspan="5" id="solution">Calculator</th>
+                </tr>
+                <tr>
+                  <td><button>...</button></td>
+                  <td><button>...</button></td>
+                  <td><button>...</button></td>
+                  <td><button>...</button></td>
+                  <td><button>...</button></td>
+                </tr>
+                <tr>
+                  <td class ="trig"><button class = "arithmetic">sin</button></td>
+                  <td class="basicMath"><button>7</button></td>
+                  <td class="basicMath"><button>8</button></td>
+                  <td class="basicMath"><button>9</button></td>
+                  <td class="basicMath"><button class = "arithmetic">x</button></td>
+                </tr>
+                <tr>
+                  <td class="trig"><button class = "arithmetic">cos</button></td>
+                  <td class="basicMath"><button>4</button></td>
+                  <td class="basicMath"><button>5</button></td>
+                  <td class="basicMath"><button>6</button></td>
+                  <td class="basicMath"><button class = "arithmetic">/</button></td>
+                </tr>
+                <tr>
+                  <td class="trig"><button class = "arithmetic">tan</button></td>
+                  <td class="basicMath"><button>1</button></td>
+                  <td class="basicMath"><button>2</button></td>
+                  <td class="basicMath"><button>3</button></td>
+                  <td class="basicMath"><button class = "arithmetic">+</button></td>
+                </tr>
+                <tr>
+                  <td id="clear"><button>AC</button></td>
+                  <td class="basicMath"><button>0</button></td>
+                  <td class="basicMath"><button>.</button></td>
+                  <td id="equals"><button>=</button></td>
+                  <td class="basicMath"><button class = "arithmetic">-</button></td>
+                </tr>
+              </table>
+              </div>
+            </td>
+            <td>
+              <!-- GameOfLife APP -->
+              <div id="gameoflife">
+                <p>Game of Life</p>
+              </div>
+            </td>  
+            <td>
+               <!-- TicTacToe APP -->
+              <div id="tictactoe">
+                <h3 id="winner">TicTacToe</h3>
+                <table>
+                  <tr>
+                    <td id="indexTic00"></td>
+                    <td id="indexTic01"></td>
+                    <td id="indexTic02"></td>
+                  </tr>
+                  <tr>
+                    <td id="indexTic10"></td>
+                    <td id="indexTic11"></td>
+                    <td id="indexTic12"></td>
+                  </tr>
+                  <tr>
+                    <td id="indexTic20"></td>
+                    <td id="indexTic21"></td>
+                    <td id="indexTic22"></td>
+                  </tr>
+                </table>
+                <div id="button"><button id="reset">Reset</button></div>
+              </div>
+            </td>
           </tr>
-          <tr>
-            <td><button>...</button></td>
-            <td><button>...</button></td>
-            <td><button>...</button></td>
-            <td><button>...</button></td>
-            <td><button>...</button></td>
-          </tr>
-          <tr>
-            <td class ="trig"><button>sin</button></td>
-            <td class="basicMath"><button>7</button></td>
-            <td class="basicMath"><button>8</button></td>
-            <td class="basicMath"><button>9</button></td>
-            <td class="basicMath"><button>x</button></td>
-          </tr>
-          <tr>
-            <td class="trig"><button>cos</button></td>
-            <td class="basicMath"><button>4</button></td>
-            <td class="basicMath"><button>5</button></td>
-            <td class="basicMath"><button>6</button></td>
-            <td class="basicMath"><button>/</button></td>
-          </tr>
-          <tr>
-            <td class="trig"><button>tan</button></td>
-            <td class="basicMath"><button>1</button></td>
-            <td class="basicMath"><button>2</button></td>
-            <td class="basicMath"><button>3</button></td>
-            <td class="basicMath"><button>+</button></td>
-          </tr>
-          <tr>
-            <td id="clear"><button>AC</button></td>
-            <td class="basicMath"><button>0</button></td>
-            <td class="basicMath"><button>.</button></td>
-            <td id="equals"><button>=</button></td>
-            <td class="basicMath"><button>-</button></td>
-          </tr>
-        </table>
-      </div>  
-      <!-- TicTacToe APP -->
-      <div id="tictactoe">
-        <h3 id="winner">TicTacToe</h3>
-        <table>
-          <tr>
-            <td id="index00"></td>
-            <td id="index01"></td>
-            <td id="index02"></td>
-          </tr>
-          <tr>
-            <td id="index10"></td>
-            <td id="index11"></td>
-            <td id="index12"></td>
-          </tr>
-          <tr>
-            <td id="index20"></td>
-            <td id="index21"></td>
-            <td id="index22"></td>
-          </tr>
-        </table>
-        <div id="button"><button id="reset">Reset</button></div>
-      </div>
+        </tbody>
+      </table>
     </div>
     
-  
-    
-   
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="Calculator/calc.js"></script>
     <script src="TicTacToe/tictactoe.js"></script>
+    <script src="GameOfLife/gameoflife.js"></script>
 
   </body>
 </html>
