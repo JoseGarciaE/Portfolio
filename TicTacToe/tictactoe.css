@@ -4,8 +4,8 @@
 }
 #tictactoe td{
     border: 2px solid grey;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 55px;
 
     color:#137091;
     text-align: center;
