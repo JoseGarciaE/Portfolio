@@ -10,8 +10,8 @@
     margin-right: auto;
 }
 #gameoflife td{
-    height: 12px;
-    width: 10px;
+    height: 15px;
+    width: 20px;
 }
 #gameoflife button{
     font-size: 15px;
