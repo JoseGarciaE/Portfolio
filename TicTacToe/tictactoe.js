@@ -5,155 +5,104 @@ function changeTurn(result){
         return "x";
 }
 
-
-
-
 function checkForWinner(){
-    var indexTic00 = document.querySelector("#indexTic00").innerHTML; 
-    var indexTic01 = document.querySelector("#indexTic01").innerHTML; 
-    var indexTic02 = document.querySelector("#indexTic02").innerHTML; 
-    var indexTic10 = document.querySelector("#indexTic10").innerHTML; 
-    var indexTic11 = document.querySelector("#indexTic11").innerHTML; 
-    var indexTic12 = document.querySelector("#indexTic12").innerHTML; 
-    var indexTic20 = document.querySelector("#indexTic20").innerHTML; 
-    var indexTic21 = document.querySelector("#indexTic21").innerHTML; 
-    var indexTic22 = document.querySelector("#indexTic22").innerHTML; 
 
+    var index00 = document.querySelector("#index00").textContent; 
+    var index01 = document.querySelector("#index01").textContent; 
+    var index02 = document.querySelector("#index02").textContent; 
+    var index10 = document.querySelector("#index10").textContent; 
+    var index11 = document.querySelector("#index11").textContent; 
+    var index12 = document.querySelector("#index12").textContent; 
+    var index20 = document.querySelector("#index20").textContent; 
+    var index21 = document.querySelector("#index21").textContent; 
+    var index22 = document.querySelector("#index22").textContent; 
 
-    if(indexTic00 == indexTic01 && indexTic00 == indexTic02) 
-        if(indexTic00 !== "")
-            return indexTic00;
-    if(indexTic10 == indexTic11 && indexTic10 == indexTic12)
-        if(indexTic10 !== "")
-            return indexTic10;
-    if(indexTic20 == indexTic21 && indexTic20 == indexTic22)
-        if(indexTic20 !== "")
-            return indexTic20;
+    var indexWin = "";
 
+    if(index00 == index01 && index00 == index02 && index00!="") 
+        indexWin =  index00;
+    if(index10 == index11 && index10 == index12 && index10!="")
+        indexWin =  index10;
+    if(index20 == index21 && index20 == index22 && index20!="")
+        indexWin =  index20;
 
+    if(index00 == index10 && index00 == index20 && index00!="")
+        indexWin =  index00;
+    if(index01 == index11 && index01 == index21 && index01!="")
+        indexWin =  index01;
+    if(index02 == index12 && index02 == index22 && index02!="")
+        indexWin =  index02;
 
-    if(indexTic00 == indexTic10 && indexTic00 == indexTic20)
-        if(indexTic00 !== "")
-            return indexTic00;
-    if(indexTic01 == indexTic11 && indexTic01 == indexTic21)
-        if(indexTic01 !== "")
-            return indexTic01;
-    if(indexTic02 == indexTic12 && indexTic02 == indexTic22)
-        if(indexTic02 !== "")
-            return indexTic02;
+    if(index00 == index11 && index00 == index22 && index00!="")
+        indexWin =  index00;
+    if(index20 == index11 && index20 == index02 && index20!="")
+        indexWin =  index20;
 
-
-
-    if(indexTic00 == indexTic11 && indexTic00 == indexTic22)
-        if(indexTic00 !== "")
-            return indexTic00;
-    if(indexTic20 == indexTic11 && indexTic20 == indexTic02)
-        if(indexTic20 !== "")
-            return indexTic20;
-
+    if(indexWin == "x" || indexWin == "o")
+        document.querySelector("#winner").textContent = indexWin.toUpperCase() + " won";
   
+}
+
+function callAI(turn){
+    var completed = false;
+    
+    while(completed == false){
+        var index1 = Math.floor(Math.random() * 3).toString(); 
+        var index2 = Math.floor(Math.random() * 3).toString(); 
+
+        if(document.querySelector("#index"+index1+index2).textContent == ""){
+            turn = changeTurn(turn);
+            document.querySelector("#index"+index1+index2).textContent = turn;
+            completed = true;
+        }
+    }
+    return turn;
 }
 
 $(document).ready(function(){
 
     var turn = "x";
+    var turnCount = 0;
 
-    $("#indexTic00").click(function(){
-        result = document.querySelector("#indexTic00").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic00").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
+    var aiMode = false;
+
+    $("#ai").click(function(){
+        aiMode = true;
+        document.querySelector("#ai").disabled= true;
+    });
+
+    if(document.querySelector("#winner").textContent === "TicTacToe"){
+        var index = document.querySelectorAll(".index");
+        for(const elem of index){
+            elem.addEventListener("click",function(){
+                result = elem.textContent; 
+                if(result ===""){
+                    turn = changeTurn(turn);
+                    elem.textContent = turn;
+                    checkForWinner();
+                    turnCount++;
+                }
+                if(aiMode && turnCount<=8){
+                    turn = callAI(turn);
+                    checkForWinner();
+                    turnCount++
+                }
+            });
         }
-    });
-    $("#indexTic01").click(function(){
-        result = document.querySelector("#indexTic01").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic01").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-        }
-    });
-    $("#indexTic02").click(function(){
-        result = document.querySelector("#indexTic02").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic02").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-        }
-    });
-    $("#indexTic10").click(function(){
-        result = document.querySelector("#indexTic10").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic10").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-        }
-    });
-    $("#indexTic11").click(function(){
-        result = document.querySelector("#indexTic11").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic11").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-         }
-    });
-    $("#indexTic12").click(function(){
-        result = document.querySelector("#indexTic12").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic12").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-        }
-    });
-    $("#indexTic20").click(function(){
-        result = document.querySelector("#indexTic20").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic20").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-        }
-    });
-    $("#indexTic21").click(function(){
-        result = document.querySelector("#indexTic21").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic21").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-        }
-    });
-    $("#indexTic22").click(function(){
-        result = document.querySelector("#indexTic22").innerHTML; 
-        if(result ===""){
-            turn = changeTurn(turn);
-            document.querySelector("#indexTic22").innerHTML = turn;
-            if(checkForWinner() == "x" || checkForWinner() == "o")
-            document.querySelector("#winner").innerHTML = checkForWinner().toUpperCase() + " won";
-        }
-    });
+    }
+    
 
     $("#reset").click(function(){
-        document.querySelector("#indexTic00").innerHTML = ""; 
-        document.querySelector("#indexTic01").innerHTML = ""; 
-        document.querySelector("#indexTic02").innerHTML = ""; 
-        document.querySelector("#indexTic10").innerHTML = ""; 
-        document.querySelector("#indexTic11").innerHTML = ""; 
-        document.querySelector("#indexTic12").innerHTML = ""; 
-        document.querySelector("#indexTic20").innerHTML = ""; 
-        document.querySelector("#indexTic21").innerHTML = ""; 
-        document.querySelector("#indexTic22").innerHTML = "";
+        aiMode = false;
+        document.querySelector("#ai").disabled= false;
 
-        document.querySelector("#winner").innerHTML = "TicTacToe"; 
+        var reset = document.querySelectorAll(".index"); 
 
+        for(const elem of reset)
+            elem.textContent = "";
+        
+        document.querySelector("#winner").textContent = "TicTacToe"; 
     });
     
-   
+
 });
