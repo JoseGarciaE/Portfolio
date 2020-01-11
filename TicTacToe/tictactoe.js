@@ -93,6 +93,7 @@ $(document).ready(function(){
     
 
     $("#reset").click(function(){
+        turnCount = 0;
         aiMode = false;
         document.querySelector("#ai").disabled= false;
 
