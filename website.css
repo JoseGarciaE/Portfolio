@@ -2,68 +2,67 @@ body{
 	font-family: Lato;
 }
 
-hr {
-	width: 10px;
-	height: 12px;
+hr{
+	width: 75%;
 }
 
-#project{
-	width: 100%;
 
-}
-
-#education img{
-	border-radius: 20%;
+.segment {
+	padding-top: 20px;
+	padding-left: 225px;
+	font-size: 30px;
 }
 
 #education{
-	width: 100%;
 	background-color: whitesmoke;
-	
 }
 
-#education td{
-	padding-left: 225px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	padding-right: 125px;
+#education img {
+	border-radius: 20%;
 
-	font-size: 20px
+	max-width: 75%;
+	max-height: auto;
 }
+
+#education .col{
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#education div p{
+	font-size: 20px;
+}
+
+#education div li{
+	font-size: 20px;
+}
+
 
 #experience img{
-	width: 40%;
-	height: 40%;
+	max-width: 75%;
+	max-height: auto;
 }
 
-#experience{
-	width: 100%;
-	
+#experience .col{
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
-#experience td{
-	padding-left: 225px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	padding-right: 125px;
-
-	font-size: 20px
+#experience div p{
+	font-size: 20px;
 }
+
 
 #front-end{
 	background-color: whitesmoke;
 	
 }
 
-
-#calculator table{
-	width: 200px;
-
+#front-end .col{
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
-#tictactoe table{
-	width: 200px;
-}
 
 #introduction{
 	text-align: center;
@@ -89,11 +88,7 @@ hr {
 	margin: 5px;
 }
 
-.segment {
-	padding-top: 20px;
-	padding-left: 225px;
-	font-size: 30px;
-}
+
 
 .icons{
     width:40px;
@@ -103,6 +98,4 @@ address{
 	font-size: 25px;
 	font-weight: 700;
 }
-hr{
-	width: 75%;
-}
+
