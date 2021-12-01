@@ -3,32 +3,46 @@
 
 }
 #calculator table{
-    table-layout: fixed;
+    
+    width: 250px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
 
-    background-color: #1c87b1;
+    background-color: #b6b6b6;
+    
+
 }
 
 #calculator button{
-    background-color: rgb(193, 220, 230);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     
 }
 
 #calculator td{
     text-align: center;
-    border: 1.5px solid rgb(22, 14, 14);
+    border: 3px solid #b6b6b6;
 
 }
+
+#calculator td button{
+    font-weight: bold
+
+}
+
+
 #calculator th{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    background-color: rgb(52, 64, 68);
+    color: rgb(0, 0, 0);
+    text-align: right;
+    background-color: #137091;
 
-    border: 3.5px solid rgb(65, 65, 65);
-    
-
+    border: 3px solid #b6b6b6;
+    border-radius: 15px;
 }
 
+#calculator #solution{
+    font-size: 20px
+}

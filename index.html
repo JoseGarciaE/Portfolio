@@ -11,6 +11,10 @@
     <link rel="stylesheet" type="text/css" href="Calculator/calc.css">
     <link rel="stylesheet" type="text/css" href="TicTacToe/tictactoe.css">
     <link rel="stylesheet" type="text/css" href="GameOfLife/gameoflife.css">
+    <link rel="stylesheet" type="text/css" href="ResistorCalculator/resistorCalculator.css">
+
+
+    
 
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -38,9 +42,8 @@
     </nav>
 
     <div id="introduction">
-        <h1>Jose Garcia</h1>
-        <p>Greetings, my name is Jose. I'm a 4th year Computer Science & Engineering student at the University of California, Merced.</p>
-        <p>I'm currently seeking an Undergraduate Internship Position for <span class="badge badge-secondary">Summer of 2021.</span></p>
+        <h1>Jose Garcia-Esparza</h1>
+        <p>Greetings, I'm currently seeking Data Science opportunities for <span class="badge badge-secondary">Spring and Fall of 2022.</span></p>
         
         <hr>   
         <a class = "link" href="https://github.com/JoseGarciaE">GitHub<span class="glyphicon glyphicon-briefcase"></span></a>
@@ -51,6 +54,95 @@
         <address>misc.Jose@gmail.com</address>
     </div>
 
+    <div class="segment">
+      <p>Education</p>
+    </div>
+
+    <div id="education">
+      <table>
+        <tr>
+          
+          <td>
+            <img style="width: 85%; height: 85%; " src="images/usc.jpg">
+          </td>
+          <td>
+            <p> <strong>Master of Science</strong>, Applied Data Science</p>
+            <p> 08/2021 - 05/2023</p>
+          </td>
+          <td> 
+            <ul>
+              <li>Machine Learning for Data Science</li>
+              <li>Database Systems</li>
+              <li>Principles of Programming for Data Science</li>
+              <li>Computational Thinking and Data Science</li>
+            </ul>           
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img style="width: 85%; height: 85%;" src="images/ucmerced.png">
+          </td>
+          <td>
+            <p><strong>Bachelor of Science</strong>,Computer Science & Engineering</p>
+            <p> 08/2017 - 05/2021</p>
+          </td>
+          <td>
+            <ul>
+              <li>Algorithm Design and Analysis</li>
+              <li>Database Systems</li>
+              <li>Object-Oriented Programming</li>
+              <li>Data Structures</li>
+              <li>Modern Applied Statistics</li>
+              <li>Probability and Statistics</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="segment">
+      <p>Professional Experience</p>
+    </div>
+
+    <div id="experience">
+      <table>
+        <tr>
+          <td>
+              <img src="images/llnl.jpg">
+          </td>
+          <td>
+            <strong>Graduate Computing Intern</strong>
+            <p> 05/2022 - </p>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <img src="images/llnl.jpg">
+          </td>
+          <td>
+            <strong>Graduate Computing Intern</strong>
+            <p> 05/2021 - 08/2021</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <img src="images/llnl.jpg">
+          </td>
+          <td>
+            <strong>Data Science Intern</strong>
+            <p> 05/2020 - 05/2021</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="segment">
+      <p>Front-End (JavaScript, jQuery, HTML, CSS, Bootsrap4)</p>
+    </div>
+  
+    <div id="front-end">
     <div>
       <table id="project">
         <tbody>
@@ -60,7 +152,7 @@
               <div id="calculator">
               <table>
                 <tr>
-                  <th colspan="5" id="solution">Calculator</th>
+                  <th colspan="5" id="solution">0</th>
                 </tr>
                 <tr>
                   <td><button>...</button></td>
@@ -132,15 +224,132 @@
                   <br>
                   <div id="button">
                       <button id="reset">Reset</button>   
-                      <button id="ai">AI Mode</button>                 
+                      <button id="random">Random</button>                 
                   </div>
               </div>
             </td>
+            
           </tr>
+      
         </tbody>
       </table>
     </div>
     
+    <!-- Resistor Calculator -->
+    <div id="otherProject">
+
+    <div id="resistorCalculator">
+
+      <div>
+        <h3>Resistor Calculator</h1>
+        <h4>Please enter from left to right the colors of the <strong>Resistor</strong></h3>
+        <h5></h5>
+      </div>
+
+      <div>
+          <div class="row">
+                <div class="col">
+                    <select class="form-control" id="band1">
+                        <option value="Black"> Black </option>
+                        <option value="Brown"> Brown </option>
+                        <option value="Red"> Red </option>
+                        <option value="Orange"> Orange </option>
+                        <option value="Yellow"> Yellow </option>
+                        <option value="Green"> Green </option>
+                        <option value="Blue"> Blue </option>
+                        <option value="Violet"> Violet </option>
+                        <option value="Grey"> Grey </option>
+                        <option value="White"> White</option>
+                        <option value="Gold"> Gold </option>
+                        <option value="Silver"> Silver </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-control" id="band2">
+                        <option value="Black"> Black </option>
+                        <option value="Brown"> Brown </option>
+                        <option value="Red"> Red </option>
+                        <option value="Orange"> Orange </option>
+                        <option value="Yellow"> Yellow </option>
+                        <option value="Green"> Green </option>
+                        <option value="Blue"> Blue </option>
+                        <option value="Violet"> Violet </option>
+                        <option value="Grey"> Grey </option>
+                        <option value="White"> White</option>
+                        <option value="Gold"> Gold </option>
+                        <option value="Silver"> Silver </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-control" id="band3">
+                        <option value="Black"> Black </option>
+                        <option value="Brown"> Brown </option>
+                        <option value="Red"> Red </option>
+                        <option value="Orange"> Orange </option>
+                        <option value="Yellow"> Yellow </option>
+                        <option value="Green"> Green </option>
+                        <option value="Blue"> Blue </option>
+                        <option value="Violet"> Violet </option>
+                        <option value="Grey"> Grey </option>
+                        <option value="White"> White</option>
+                        <option value="Gold"> Gold </option>
+                        <option value="Silver"> Silver </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-control" id="band4">
+                        <option value="Black"> Black </option>
+                        <option value="Brown"> Brown </option>
+                        <option value="Red"> Red </option>
+                        <option value="Orange"> Orange </option>
+                        <option value="Yellow"> Yellow </option>
+                        <option value="Green"> Green </option>
+                        <option value="Blue"> Blue </option>
+                        <option value="Violet"> Violet </option>
+                        <option value="Grey"> Grey </option>
+                        <option value="White"> White</option>
+                        <option value="Gold"> Gold </option>
+                        <option value="Silver"> Silver </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-control" id="band5">
+                        <option value="N/A"> N/A </option>
+                        <option value="Black"> Black </option>
+                        <option value="Brown"> Brown </option>
+                        <option value="Red"> Red </option>
+                        <option value="Orange"> Orange </option>
+                        <option value="Yellow"> Yellow </option>
+                        <option value="Green"> Green </option>
+                        <option value="Blue"> Blue </option>
+                        <option value="Violet"> Violet </option>
+                        <option value="Grey"> Grey </option>
+                        <option value="White"> White</option>
+                        <option value="Gold"> Gold </option>
+                        <option value="Silver"> Silver </option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+              <button class="btn btn-primary" id="calcBtn" style="margin-top: 20px;"> Calculate</button>
+            </div>
+            
+            <div>
+              <h2 class="output" style="color:#137091; margin-top: 20px;"></h2>
+            </div>
+            
+        </div>
+
+        <div>
+            <img style="width: 30%; height: 30%;" src="ResistorCalculator/resistor.jpg"> 
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -148,6 +357,8 @@
     <script src="Calculator/calc.js"></script>
     <script src="TicTacToe/tictactoe.js"></script>
     <script src="GameOfLife/gameoflife.js"></script>
+    <script src="ResistorCalculator/resistorCalculator.js"></script>
+
 
   </body>
 </html>

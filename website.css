@@ -2,9 +2,59 @@ body{
 	font-family: Lato;
 }
 
+hr {
+	width: 10px;
+	height: 12px;
+}
+
 #project{
 	width: 100%;
+
 }
+
+#education img{
+	border-radius: 20%;
+}
+
+#education{
+	width: 100%;
+	background-color: whitesmoke;
+	
+}
+
+#education td{
+	padding-left: 225px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-right: 125px;
+
+	font-size: 20px
+}
+
+#experience img{
+	width: 40%;
+	height: 40%;
+}
+
+#experience{
+	width: 100%;
+	
+}
+
+#experience td{
+	padding-left: 225px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-right: 125px;
+
+	font-size: 20px
+}
+
+#front-end{
+	background-color: whitesmoke;
+	
+}
+
 
 #calculator table{
 	width: 200px;
@@ -37,6 +87,12 @@ body{
 	font-size: 30px;
 	font-weight: 700;
 	margin: 5px;
+}
+
+.segment {
+	padding-top: 20px;
+	padding-left: 225px;
+	font-size: 30px;
 }
 
 .icons{

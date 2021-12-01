@@ -43,7 +43,8 @@ function checkForWinner(){
   
 }
 
-function callAI(turn){
+function callrandom(turn){
+        
     var completed = false;
     
     while(completed == false){
@@ -64,11 +65,11 @@ $(document).ready(function(){
     var turn = "x";
     var turnCount = 0;
 
-    var aiMode = false;
+    var random = false;
 
-    $("#ai").click(function(){
-        aiMode = true;
-        document.querySelector("#ai").disabled= true;
+    $("#random").click(function(){
+        random = true;
+        document.querySelector("#random").disabled= true;
     });
 
     if(document.querySelector("#winner").textContent === "TicTacToe"){
@@ -82,8 +83,8 @@ $(document).ready(function(){
                     checkForWinner();
                     turnCount++;
                 }
-                if(aiMode && turnCount<=8){
-                    turn = callAI(turn);
+                if(random && turnCount<=8){
+                    turn = callrandom(turn);
                     checkForWinner();
                     turnCount++
                 }
@@ -94,8 +95,8 @@ $(document).ready(function(){
 
     $("#reset").click(function(){
         turnCount = 0;
-        aiMode = false;
-        document.querySelector("#ai").disabled= false;
+        random = false;
+        document.querySelector("#random").disabled= false;
 
         var reset = document.querySelectorAll(".index"); 
 

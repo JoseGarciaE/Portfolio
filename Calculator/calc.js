@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelector("#clear").addEventListener("click", function(){
-            document.querySelector("#solution").textContent = "Calculator";
+            document.querySelector("#solution").textContent = "0";
             input = "";
             enableMath();
     });
