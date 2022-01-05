@@ -171,12 +171,5 @@ document.addEventListener("DOMContentLoaded",function(){
         document.querySelector("#start").disabled = false;
         clearTimeout(iteration);
     });
-
-
-
-
-
-
-
     
 });

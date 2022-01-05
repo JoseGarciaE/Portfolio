@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./front-end.css" />
+
+    <link rel="stylesheet" type="text/css" href="GameOfLife/styles.css" />
+    <link rel="stylesheet" type="text/css" href="Calculator/styles.css" />
+    <link rel="stylesheet" type="text/css" href="TicTacToe/styles.css" />
+    <link rel="stylesheet" type="text/css" href="ResistorCalculator/styles.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col"> <strong>Game of Life</strong></div>
+        <div class="col" id="gameoflife"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col"><strong>Calculator</strong></div>
+        <div class="col">
+          <div id="calculator">
+            <table>
+              <tr>
+                <th colspan="5" id="solution">0</th>
+              </tr>
+              <tr>
+                <td class="trig"><button class="arithmetic">sin</button></td>
+                <td class="basicMath"><button>7</button></td>
+                <td class="basicMath"><button>8</button></td>
+                <td class="basicMath"><button>9</button></td>
+                <td class="basicMath"><button class="arithmetic">x</button></td>
+              </tr>
+              <tr>
+                <td class="trig"><button class="arithmetic">cos</button></td>
+                <td class="basicMath"><button>4</button></td>
+                <td class="basicMath"><button>5</button></td>
+                <td class="basicMath"><button>6</button></td>
+                <td class="basicMath"><button class="arithmetic">/</button></td>
+              </tr>
+              <tr>
+                <td class="trig"><button class="arithmetic">tan</button></td>
+                <td class="basicMath"><button>1</button></td>
+                <td class="basicMath"><button>2</button></td>
+                <td class="basicMath"><button>3</button></td>
+                <td class="basicMath"><button class="arithmetic">+</button></td>
+              </tr>
+              <tr>
+                <td id="clear"><button>AC</button></td>
+                <td class="basicMath"><button>0</button></td>
+                <td class="basicMath"><button>.</button></td>
+                <td id="equals"><button>=</button></td>
+                <td class="basicMath"><button class="arithmetic">-</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col"><strong>Tik-Tac-Toe</strong> </div>
+        <div class="col">
+            <div id="tictactoe">
+                
+            <table>
+              <tr>
+                <td class="index" id="index00"></td>
+                <td class="index" id="index01"></td>
+                <td class="index" id="index02"></td>
+
+              </tr>
+              <tr>
+                <td class="index" id="index10"></td>
+                <td class="index" id="index11"></td>
+                <td class="index" id="index12"></td>
+              </tr>
+              <tr>
+                <td class="index" id="index20"></td>
+                <td class="index" id="index21"></td>
+                <td class="index" id="index22"></td>
+              </tr>
+            </table>
+            
+            <h3 id="winner">-</h3>
+
+            <br>
+            <div id="button">
+              <button id="reset">Reset</button>
+              <button id="random">Random</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col"><strong>Resistor Calculation</strong></div>
+        <div class="col">
+          <div>
+            <div class="row">
+              <div class="col">
+                <select class="form-control" id="band1">
+                  <option value="Black">Black</option>
+                  <option value="Brown">Brown</option>
+                  <option value="Red">Red</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Green">Green</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Violet">Violet</option>
+                  <option value="Grey">Grey</option>
+                  <option value="White">White</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Silver">Silver</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" id="band2">
+                  <option value="Black">Black</option>
+                  <option value="Brown">Brown</option>
+                  <option value="Red">Red</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Green">Green</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Violet">Violet</option>
+                  <option value="Grey">Grey</option>
+                  <option value="White">White</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Silver">Silver</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" id="band3">
+                  <option value="Black">Black</option>
+                  <option value="Brown">Brown</option>
+                  <option value="Red">Red</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Green">Green</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Violet">Violet</option>
+                  <option value="Grey">Grey</option>
+                  <option value="White">White</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Silver">Silver</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" id="band4">
+                  <option value="Black">Black</option>
+                  <option value="Brown">Brown</option>
+                  <option value="Red">Red</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Green">Green</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Violet">Violet</option>
+                  <option value="Grey">Grey</option>
+                  <option value="White">White</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Silver">Silver</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" id="band5">
+                  <option value="N/A">N/A</option>
+                  <option value="Black">Black</option>
+                  <option value="Brown">Brown</option>
+                  <option value="Red">Red</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Green">Green</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Violet">Violet</option>
+                  <option value="Grey">Grey</option>
+                  <option value="White">White</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Silver">Silver</option>
+                </select>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col">
+
+                <button class="btn btn-primary" id="calcBtn" style="margin-top: 20px">
+                  Calculate
+                </button>
+
+              </div>
+              <div class="col">
+                <img src="./ResistorCalculator/resistor.jpeg" style="width: 200px">
+              </div>
+              <div class="col">
+                <h4
+                  class="output"
+                  style="color: #137091; margin-top: 25px; font-size: 20px;"
+                ></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="GameOfLife/script.js"></script>
+    <script src="Calculator/script.js"></script>
+    <script src="TicTacToe/script.js"></script>
+    <script src="ResistorCalculator/script.js"></script>
+  </body>
+</html>

@@ -7,18 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="website.css">
-  <link rel="stylesheet" type="text/css" href="Calculator/calc.css">
-  <link rel="stylesheet" type="text/css" href="TicTacToe/tictactoe.css">
-  <link rel="stylesheet" type="text/css" href="GameOfLife/gameoflife.css">
-  <link rel="stylesheet" type="text/css" href="ResistorCalculator/resistorCalculator.css">
-
-
-
-
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 
   <title>Jose's Website</title>
@@ -36,10 +27,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Bio</a>
+          <a class="nav-link" href="./Front-End/front-end.html">Front-End</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#">Data Science</a>
         </li>
       </ul>
     </div>
@@ -73,7 +64,7 @@
           <img src="images/usc.jpg" class="img-fluid" alt="Responsive image">
         </div>
         <div class="col">
-          <p><strong>Master of Science</strong>, Applied Data Science</p>
+          <p><strong>M.S.</strong> Applied Data Science</p>
           <p> 08/2021 - 05/2023</p>
         </div>
         <div class="col">
@@ -90,7 +81,7 @@
           <img src="images/ucmerced.png" class="img-fluid" alt="Responsive image">
         </div>
         <div class="col">
-          <p><strong>Bachelor of Science</strong>,Computer Science & Engineering</p>
+          <p><strong>B.S.</strong> Computer Science & Engineering</p>
           <p> 08/2017 - 05/2021</p>
         </div>
         <div class="col">
@@ -118,270 +109,54 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <!-- <img src="images/llnl.jpg"> -->
-        </div>
-        <div class="col">
-          <!-- <p><strong>Graduate Computing Intern</strong></p>
-          <p> 05/2022 - </p> -->
+          <img src="images/llnl.jpg">
         </div>
         <div class="col">
 
+        </div>
+        <div class="col">
+          <p><strong>Graduate Computing Intern</strong></p>
+          <p> 05/2022 - </p>
         </div>
       </div>
       <div class="row">
         <div class="col">
           <img src="images/llnl.jpg">
+        </div>
+        <div class="col">
+
         </div>
         <div class="col">
           <p><strong>Graduate Computing Intern</strong></p>
           <p> 05/2021 - 08/2021</p>
         </div>
-        <div class="col">
-
-        </div>
       </div>
       <div class="row">
         <div class="col">
           <img src="images/llnl.jpg">
         </div>
         <div class="col">
+
+        </div>
+        <div class="col">
           <p><strong>Data Science Intern</strong></p>
           <p> 05/2020 - 05/2021</p>
         </div>
-        <div class="col">
-
-        </div>
+        
       </div>
     </div>
   </div>
 
-  <div id="front-end">
-    <div class="segment">
-      <p>Front-End Showcase</p>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div id="calculator">
-            <table>
-              <tr>
-                <th colspan="5" id="solution">0</th>
-              </tr>
-              <tr>
-                <td class="trig"><button class="arithmetic">sin</button></td>
-                <td class="basicMath"><button>7</button></td>
-                <td class="basicMath"><button>8</button></td>
-                <td class="basicMath"><button>9</button></td>
-                <td class="basicMath"><button class="arithmetic">x</button></td>
-              </tr>
-              <tr>
-                <td class="trig"><button class="arithmetic">cos</button></td>
-                <td class="basicMath"><button>4</button></td>
-                <td class="basicMath"><button>5</button></td>
-                <td class="basicMath"><button>6</button></td>
-                <td class="basicMath"><button class="arithmetic">/</button></td>
-              </tr>
-              <tr>
-                <td class="trig"><button class="arithmetic">tan</button></td>
-                <td class="basicMath"><button>1</button></td>
-                <td class="basicMath"><button>2</button></td>
-                <td class="basicMath"><button>3</button></td>
-                <td class="basicMath"><button class="arithmetic">+</button></td>
-              </tr>
-              <tr>
-                <td id="clear"><button>AC</button></td>
-                <td class="basicMath"><button>0</button></td>
-                <td class="basicMath"><button>.</button></td>
-                <td id="equals"><button>=</button></td>
-                <td class="basicMath"><button class="arithmetic">-</button></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="col">
-          <!-- GameOfLife APP -->
-          <div id="gameoflife">
-            <p>Game of Life</p>
-          </div>
-        </div>
-        <div class="col">
-          <!-- TicTacToe APP -->
-          <div id="tictactoe">
-
-            <h3 id="winner">TicTacToe</h3>
-            <table>
-              <tr>
-                <td class="index" id="index00"></td>
-                <td class="index" id="index01"></td>
-                <td class="index" id="index02"></td>
-
-              </tr>
-              <tr>
-                <td class="index" id="index10"></td>
-                <td class="index" id="index11"></td>
-                <td class="index" id="index12"></td>
-              </tr>
-              <tr>
-                <td class="index" id="index20"></td>
-                <td class="index" id="index21"></td>
-                <td class="index" id="index22"></td>
-              </tr>
-            </table>
-            <br>
-            <div id="button">
-              <button id="reset">Reset</button>
-              <button id="random">Random</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col col-7">
-          <div>
-            <h3>Resistor Calculator</h3>
-            <h4>From left to right the colors of the <strong>Resistor</strong></h3>
-              <h5></h5>
-          </div>
-
-          <div>
-            <div class="row">
-              <div class="col">
-                <select class="form-control" id="band1">
-                  <option value="Black"> Black </option>
-                  <option value="Brown"> Brown </option>
-                  <option value="Red"> Red </option>
-                  <option value="Orange"> Orange </option>
-                  <option value="Yellow"> Yellow </option>
-                  <option value="Green"> Green </option>
-                  <option value="Blue"> Blue </option>
-                  <option value="Violet"> Violet </option>
-                  <option value="Grey"> Grey </option>
-                  <option value="White"> White</option>
-                  <option value="Gold"> Gold </option>
-                  <option value="Silver"> Silver </option>
-                </select>
-              </div>
-              <div class="col">
-                <select class="form-control" id="band2">
-                  <option value="Black"> Black </option>
-                  <option value="Brown"> Brown </option>
-                  <option value="Red"> Red </option>
-                  <option value="Orange"> Orange </option>
-                  <option value="Yellow"> Yellow </option>
-                  <option value="Green"> Green </option>
-                  <option value="Blue"> Blue </option>
-                  <option value="Violet"> Violet </option>
-                  <option value="Grey"> Grey </option>
-                  <option value="White"> White</option>
-                  <option value="Gold"> Gold </option>
-                  <option value="Silver"> Silver </option>
-                </select>
-              </div>
-              <div class="col">
-                <select class="form-control" id="band3">
-                  <option value="Black"> Black </option>
-                  <option value="Brown"> Brown </option>
-                  <option value="Red"> Red </option>
-                  <option value="Orange"> Orange </option>
-                  <option value="Yellow"> Yellow </option>
-                  <option value="Green"> Green </option>
-                  <option value="Blue"> Blue </option>
-                  <option value="Violet"> Violet </option>
-                  <option value="Grey"> Grey </option>
-                  <option value="White"> White</option>
-                  <option value="Gold"> Gold </option>
-                  <option value="Silver"> Silver </option>
-                </select>
-              </div>
-              <div class="col">
-                <select class="form-control" id="band4">
-                  <option value="Black"> Black </option>
-                  <option value="Brown"> Brown </option>
-                  <option value="Red"> Red </option>
-                  <option value="Orange"> Orange </option>
-                  <option value="Yellow"> Yellow </option>
-                  <option value="Green"> Green </option>
-                  <option value="Blue"> Blue </option>
-                  <option value="Violet"> Violet </option>
-                  <option value="Grey"> Grey </option>
-                  <option value="White"> White</option>
-                  <option value="Gold"> Gold </option>
-                  <option value="Silver"> Silver </option>
-                </select>
-              </div>
-              <div class="col">
-                <select class="form-control" id="band5">
-                  <option value="N/A"> N/A </option>
-                  <option value="Black"> Black </option>
-                  <option value="Brown"> Brown </option>
-                  <option value="Red"> Red </option>
-                  <option value="Orange"> Orange </option>
-                  <option value="Yellow"> Yellow </option>
-                  <option value="Green"> Green </option>
-                  <option value="Blue"> Blue </option>
-                  <option value="Violet"> Violet </option>
-                  <option value="Grey"> Grey </option>
-                  <option value="White"> White</option>
-                  <option value="Gold"> Gold </option>
-                  <option value="Silver"> Silver </option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <button class="btn btn-primary" id="calcBtn" style="margin-top: 20px;"> Calculate</button>
-            </div>
-
-            <div>
-              <h2 class="output" style="color:#137091; margin-top: 20px;"></h2>
-            </div>
-
-          </div>
-
-          <div>
-          </div>
-
-        </div>
-
-        <div class="col">
-          <img style="width: 100%; " src="ResistorCalculator/resistor.jpg">
-        </div>
-      </div>
-
-
-    </div>
-
   </div>
-
-  <divi id="back-end">
-    <div class="segment">
-      <p>Back-End Showcase (Coming Soon)</p>
-    </div>
-    </div>
-
-    <div id="data-science">
-      <div class="segment">
-        <p>Data Science Showcase (Coming Soon)</p>
-      </div>
-    </div>
 
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-    <script src="Calculator/calc.js"></script>
-    <script src="TicTacToe/tictactoe.js"></script>
-    <script src="GameOfLife/gameoflife.js"></script>
-    <script src="ResistorCalculator/resistorCalculator.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
 
 
 </body>

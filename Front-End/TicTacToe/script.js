@@ -72,7 +72,7 @@ $(document).ready(function(){
         document.querySelector("#random").disabled= true;
     });
 
-    if(document.querySelector("#winner").textContent === "TicTacToe"){
+    if(document.querySelector("#winner").textContent === "-"){
         var index = document.querySelectorAll(".index");
         for(const elem of index){
             elem.addEventListener("click",function(){
@@ -103,7 +103,7 @@ $(document).ready(function(){
         for(const elem of reset)
             elem.textContent = "";
         
-        document.querySelector("#winner").textContent = "TicTacToe"; 
+        document.querySelector("#winner").textContent = "-"; 
     });
     
 
