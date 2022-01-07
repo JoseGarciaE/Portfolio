@@ -75,6 +75,22 @@ address{
 
 }
 
+#skills{
+	background-color: whitesmoke;
+}
+
+#skills img{
+	max-width: 65%;
+	max-height: auto;
+}
+
+#skills .col{
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-size: 20px;
+
+}
+
 
 
 

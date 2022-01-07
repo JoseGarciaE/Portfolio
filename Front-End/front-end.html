@@ -6,30 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
     <link rel="stylesheet" type="text/css" href="./front-end.css" />
 
     <link rel="stylesheet" type="text/css" href="GameOfLife/styles.css" />
     <link rel="stylesheet" type="text/css" href="Calculator/styles.css" />
     <link rel="stylesheet" type="text/css" href="TicTacToe/styles.css" />
-    <link rel="stylesheet" type="text/css" href="ResistorCalculator/styles.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="ResistorCalculator/styles.css"
+    />
   </head>
 
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Front-End</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Data Science</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="row">
-        <div class="col"> <strong>Game of Life</strong></div>
+        <div class="col"><strong>Game of Life</strong></div>
+        <div class="col">
+          <p>
+            This board was created solely using JavaScript. HTML and CSS
+            elements were dynamically created.
+          </p>
+        </div>
         <div class="col" id="gameoflife"></div>
       </div>
     </div>
 
-    <hr>
+    <hr />
 
     <div class="container">
       <div class="row">
         <div class="col"><strong>Calculator</strong></div>
+        <div class="col">
+          <p>
+            Such as the former, an HTML board except hardcoded and with
+            javascript math functions.
+          </p>
+        </div>
         <div class="col">
           <div id="calculator">
             <table>
@@ -70,20 +117,21 @@
       </div>
     </div>
 
-    <hr>
+    <hr />
 
     <div class="container">
       <div class="row">
-        <div class="col"><strong>Tik-Tac-Toe</strong> </div>
+        <div class="col"><strong>Tik-Tac-Toe</strong></div>
         <div class="col">
-            <div id="tictactoe">
-                
+          <p>HTML and event handling.</p>
+        </div>
+        <div class="col">
+          <div id="tictactoe">
             <table>
               <tr>
                 <td class="index" id="index00"></td>
                 <td class="index" id="index01"></td>
                 <td class="index" id="index02"></td>
-
               </tr>
               <tr>
                 <td class="index" id="index10"></td>
@@ -96,10 +144,10 @@
                 <td class="index" id="index22"></td>
               </tr>
             </table>
-            
+
             <h3 id="winner">-</h3>
 
-            <br>
+            <br />
             <div id="button">
               <button id="reset">Reset</button>
               <button id="random">Random</button>
@@ -109,11 +157,14 @@
       </div>
     </div>
 
-    <hr>
+    <hr />
 
     <div class="container">
       <div class="row">
         <div class="col"><strong>Resistor Calculation</strong></div>
+        <div class="col">
+          <p>HTML and Bootstrap with event handling.</p>
+        </div>
         <div class="col">
           <div>
             <div class="row">
@@ -199,22 +250,27 @@
                 </select>
               </div>
             </div>
-        
+
             <div class="row">
               <div class="col">
-
-                <button class="btn btn-primary" id="calcBtn" style="margin-top: 20px">
+                <button
+                  class="btn btn-primary"
+                  id="calcBtn"
+                  style="margin-top: 20px"
+                >
                   Calculate
                 </button>
-
               </div>
               <div class="col">
-                <img src="./ResistorCalculator/resistor.jpeg" style="width: 200px">
+                <img
+                  src="./ResistorCalculator/resistor.jpeg"
+                  style="width: 200px"
+                />
               </div>
               <div class="col">
                 <h4
                   class="output"
-                  style="color: #137091; margin-top: 25px; font-size: 20px;"
+                  style="color: #137091; margin-top: 25px; font-size: 20px"
                 ></h4>
               </div>
             </div>
