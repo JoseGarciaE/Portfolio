@@ -2,3 +2,8 @@
     margin-left: 225px;
     margin-right: 200px;
 }
+
+#resistors{
+    height: auto;
+    width: 150%;
+}

@@ -3,7 +3,7 @@ body{
 }
 
 img{
-    width: 50px;
+    width: 20%;
     height: auto;
 }
 
@@ -12,9 +12,6 @@ img{
 	padding-top: 20px;
 }
 
-iframe{
-	width: 600px;
-	height: 600px;
-}
+
 
 
