@@ -2,9 +2,6 @@ body{
 	font-size: 20px;
 }
 
-
-
-
 img{
     width: 15%;
     height: 10%;
@@ -14,12 +11,9 @@ img{
 	padding-bottom: 15px;
 	padding-top: 20px;
 }
-
-.row{
-	padding-left: 10%;
-	padding-right: 10%;
+ul {
+	list-style-type: square;
 }
-
 
 
 

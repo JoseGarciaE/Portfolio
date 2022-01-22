@@ -7,29 +7,18 @@ hr{
     
 }
 
-
-/* ul {
-    list-style-type: none;
+ul {
+	list-style-type: square;
 }
-
-ul li::before {   
-    content: '';   
-    display: inline-block;   
-    height: 20px;   
-    width: 20px;    
-    background-size: 20px;   
-    background-image: url('./images/checkmark.png');   
-
-} */
 
 address{
 	font-size: 25px;
 	font-weight: 700;
 }
 
-.segment p {
+.segment {
 	padding-top: 20px;
-	padding-left: 150px;
+	padding-left: 225px;
 	font-size: 30px;
 }
 
@@ -65,20 +54,14 @@ address{
 #education img {
 	border-radius: 20%;
 
-	max-width: 50%;
+	max-width: 75%;
 	max-height: auto;
 }
 
 #education .col{
 	padding-bottom: 15px;
 	padding-top: 15px;
-
 	font-size: 20px;
-}
-
-#education .row{
-	padding-left: 10%;
-	padding-right: 10%;
 }
 
 #education div li{
@@ -86,21 +69,15 @@ address{
 }
 
 #experience img{
-	max-width: 45%;
+	max-width: 65%;
 	max-height: auto;
 }
 
 #experience .col{
 	padding-bottom: 15px;
 	padding-top: 15px;
-
 	font-size: 20px;
 
-}
-
-#experience .row{
-	padding-left: 10%;
-	padding-right: 10%;
 }
 
 #skills{
@@ -119,11 +96,6 @@ address{
 
 }
 
-#skills .row{
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
 #honors img{
 	max-width: 65%;
 	max-height: auto;
@@ -135,12 +107,6 @@ address{
 	font-size: 20px;
 
 }
-
-#honors .row{
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
 
 
 
