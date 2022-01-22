@@ -7,6 +7,11 @@ body{
 	padding-top: 20px;
 }
 
+.row{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 iframe{
 	height: 450px;
 	width: 600px;
