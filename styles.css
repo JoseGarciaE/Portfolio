@@ -22,6 +22,10 @@ address{
 	font-size: 30px;
 }
 
+.centered {
+	text-align: center;
+}
+
 #introduction{
 	text-align: center;
 	color: #292f50;
@@ -54,7 +58,7 @@ address{
 #education img {
 	border-radius: 20%;
 
-	max-width: 75%;
+	max-width: 55%;
 	max-height: auto;
 }
 
@@ -69,7 +73,7 @@ address{
 }
 
 #experience img{
-	max-width: 65%;
+	max-width: 55%;
 	max-height: auto;
 }
 
